@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Keskustelu</title>
+
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        textarea, input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        hr {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Keskustelut</h1>
+
+    <nav>
+        <a href="cv.html">CV</a>
+        <a href="tyokokemus.html">Työkokemus</a>
+        <a href="index.html">Index</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Jätä kommentti</h2>
+
+        <form>
+            <label for="kommentti">Kommentti:</label><br>
+            <textarea id="kommentti" name="kommentti" rows="5"></textarea>
+
+            <br><br>
+
+            <label for="email">Sinun sähköposti:</label>
+            <input type="email" id="email" name="email">
+
+            <br><br>
+
+            <label for="pvm">Syntymäpäivä:</label>
+            <input type="date" id="pvm" name="pvm">
+
+            <br><br>
+
+            <input type="checkbox" id="suostumus" name="suostumus">
+            <label for="suostumus">
+                Olen lukenut säännöt ja hyväksyn ne.
+            </label>
+
+            <br><br>
+
+            <label for="tyyppi">Viestin tyyppi:</label>
+            <select id="tyyppi" name="tyyppi">
+                <option value="kysymys">Kysymys</option>
+                <option value="kommentti">Kommentti</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Lähetä</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Kommentit:</h2>
+
+        <strong>I think that's a really good idea</strong><br>
+        Lähetetty: 19.03.2026 / 13:30<br>
+        hamed.gholam@gov.com
+        <hr>
+
+        <strong>In my opinion you should style the site a little!</strong><br>
+        Lähetetty: 18.03.2026 / 09:15<br>
+        alexAH@koulu.com
+        <hr>
+
+        <strong>Could you add pictues here?</strong><br>
+        Lähetetty: 17.03.2026 / 20:45<br>
+        Kubagamer123@email.com
+        <hr>
+
+        <strong>That looks like a really good site to discuss coding problems</strong><br>
+        Lähetetty: 17.03.2026 / 20:45<br>
+        Anonymous@Anonymous.com
+        <hr>
+
+        <strong>Is there anyway you could upgrade the site with css to make it better?</strong><br>
+        Lähetetty: 10.03.2026 / 18:30<br>
+        John.Smith@gmail.com
+        <hr>
+
+        <strong>First comment on the site!! </strong><br>
+        Lähetetty: 10.03.2026 / 18:30<br>
+        User123@everydaymail.com
+        <hr>
+
+    </section>
+
+</main>
+
+</body>
+</html>
