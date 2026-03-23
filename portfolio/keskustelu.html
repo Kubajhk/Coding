@@ -60,6 +60,11 @@
         hr {
             margin: 15px 0;
         }
+
+        dialog {
+            border-radius: 10px;
+            padding: 20px;
+        }
     </style>
 </head>
 
@@ -78,7 +83,12 @@
 
 <main>
 
-    <section>
+    <button onclick="document.getElementById('dialogi').showModal()">
+        Kommentoi
+    </button>
+
+    <dialog id="dialogi">
+
         <h2>Jätä kommentti</h2>
 
         <form>
@@ -113,8 +123,13 @@
             <br><br>
 
             <button type="submit">Lähetä</button>
+
+            <button type="button" onclick="document.getElementById('dialogi').close()">
+                Sulje
+            </button>
         </form>
-    </section>
+
+    </dialog>
 
     <section>
         <h2>Kommentit:</h2>
