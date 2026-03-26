@@ -1,12 +1,39 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin-left: 64px;
+    margin-right: 64px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d3d3d3;
 }
 
 h1 {
+    font-size: 60px;
     color: darkblue;
 }
 
-p {
-    font-size: 16px;
+h2 {
+    font-size: 48px;
+    color: magenta
+}
+
+h3 {
+    font-size: 32px;
+    color: azure;
+}
+
+h4 {
+    font-size: 18px;
+    color: blueviolet;
+}
+
+h5 {
+    color: darkkhaki;
+}
+
+h6 {
+    color: ivory;
+}
+
+section {
+    border: 1px aquamarine;
+    background-color: #eeeeee;
 }
