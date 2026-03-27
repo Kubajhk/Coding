@@ -5,6 +5,43 @@ body {
     background-color: #d3d3d3;
 }
 
+a {
+  color: #5c29ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5aa0ff;
+}
+
+a:visited {
+  color: #777777;
+}
+
+/* Button */
+button {
+  background-color: #2a7ae2; 
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5aa0ff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #fff9c4;
+  outline: none;
+}
+
+li:last-child {
+  font-style: oblique;
+}
+
 h1 {
     font-size: 60px;
     color: darkblue;
