@@ -16,14 +16,6 @@ body {
         "footer";
 }
 
-body.portfolio {
-    grid-template-areas:
-        "header header"
-        "nav nav"
-        "aside main"
-        "footer footer";
-    grid-template-columns: 220px 1fr;
-}
 
 header, nav, main, aside, footer {
     max-width: 1000px;
