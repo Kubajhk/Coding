@@ -16,6 +16,37 @@ body {
         "footer";
 }
 
+body.page1 {
+  background-image: url("wpps/wallpp1.jpg");
+}
+
+body.page2 {
+  background-image: url("wpps/wpp2.jpg");
+}
+
+body.page3 {
+  background-image: url("wpps/wpp3.jpg");
+}
+
+body.page4 {
+    background-image: url("wpps/wpp4.jpg");
+}
+
+body.page5 {
+    background-image: url("wpps/wpp5.jpg");
+}
+
+body.page6 {
+    background-image: url("wpps/wpp6.jpg");
+}   
+
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 header, nav, main, aside, footer {
     max-width: 1000px;
