@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: BebasNeue, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 
     display: flex;
     justify-content: center;
@@ -13,9 +13,58 @@ body {
 body.page1 { background-image: url("wpps/wallpp1.jpg"); }
 body.page2 { background-image: url("wpps/wpp2.jpg"); }
 body.page3 { background-image: url("wpps/wpp3.jpg"); }
-body.page4 {background-image: url(wpps/wpp4.jpg);}
-body.page5 {background-image: url(wpps/wpp5.jpg);}
-body.page6 {background-image: url(wpps/wpp6.jpg);}
+body.page4 {background-image: url("wpps/wpp4.jpg");}
+body.page5 {background-image: url("wpps/wpp5.jpg");}
+body.page6 {background-image: url("wpps/wpp6.jpg");}
+
+body.page5 .page-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+body.page5 {
+    display: block;
+}
+
+body.page4 {
+    display: block;
+}
+
+body.page4 header {
+    max-width: 900px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    background: #dcdcdc;
+    text-align: left;
+}
+
+body.page4 header nav {
+    margin-top: 10px;
+}
+
+body.page4 main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0;
+    background: transparent;
+}
+
+body.page4 .middle {
+    background: #e6e6e6;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+body.page4 footer {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #dcdcdc;
+    text-align: center;
+}
+
 .page-wrapper {
     width: 1000px;
 
@@ -57,13 +106,11 @@ footer {
     text-align: center;
 }
 
-/* SIDEBAR LINKS */
 aside a {
     display: block;
     margin-bottom: 10px;
 }
 
-/* TEXT */
 h1 {
     font-size: 48px;
     color: blue;
