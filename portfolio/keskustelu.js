@@ -1,0 +1,1 @@
+console.log("Keskustelun sivu avattu");
