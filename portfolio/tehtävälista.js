@@ -22,14 +22,19 @@ function paivitaLista() {
 function lisaa() {
 
     let input = document.getElementById("uusiTehtava");
+    let maaraInput = document.getElementById("maara");
 
     let arvo = input.value;
+    let maara = Number(maaraInput.value);
 
-    lista.push(arvo);
+    for (let i = 0; i < maara; i++) {
+        lista.push(arvo);
+    }
 
     paivitaLista();
 
     input.value = "";
+    maaraInput.value = 1;
 }
 
 paivitaLista();
