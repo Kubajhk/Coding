@@ -5,22 +5,49 @@
     <title>Henkilötiedot</title>
 </head>
 <body>
+
     <script src="henkilot.js" defer></script>
 
     <h1>Henkilötiedot</h1>
 
-    <table>
+    <table border="1">
         <thead>
             <tr>
                 <th>Nimi</th>
                 <th>Ikä</th>
                 <th>Työ</th>
-                <th>Ajo kortti</th>
+                <th>Ajokortti</th>
             </tr>
         </thead>
 
         <tbody id="rivit"></tbody>
     </table>
+
+    <h2>Lisää henkilö</h2>
+
+    <form id="lomake">
+        <div>
+            <label>Nimi:</label>
+            <input type="text" id="nimi">
+        </div>
+
+        <div>
+            <label>Ikä:</label>
+            <input type="number" id="ika">
+        </div>
+
+        <div>
+            <label>Työ:</label>
+            <input type="text" id="tyo">
+        </div>
+
+        <div>
+            <label>Ajokortti:</label>
+            <input type="checkbox" id="ajokortti">
+        </div>
+
+        <button type="submit">Lähetä</button>
+    </form>
 
 </body>
 </html>
