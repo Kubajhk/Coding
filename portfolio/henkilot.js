@@ -32,8 +32,10 @@ const henkilot = [
 ];
 
 const rivit = document.getElementById("rivit");
+const lomake = document.getElementById("lomake");
 
 function luoRivit() {
+
     rivit.innerHTML = "";
 
     for (const henkilo of henkilot) {
@@ -41,24 +43,60 @@ function luoRivit() {
         const rivi = document.createElement("tr");
 
         const nimiTd = document.createElement("td");
-        nimiTd.innerHTML = henkilo.name;
+        nimiTd.textContent = henkilo.name;
 
         const ikaTd = document.createElement("td");
-        ikaTd.innerHTML = henkilo.age;
+
+        if (henkilo.age >= 18) {
+            ikaTd.textContent = `${henkilo.age} 🍺`;
+        } else {
+            ikaTd.textContent = henkilo.age;
+        }
 
         const jobTd = document.createElement("td");
-        jobTd.innerHTML = henkilo.job;
+
+        if (henkilo.job.toLowerCase() === "opiskelija") {
+            jobTd.textContent = `${henkilo.job} 🎓`;
+        } else {
+            jobTd.textContent = henkilo.job;
+        }
 
         const ajokorttiTd = document.createElement("td");
-        ajokorttiTd.innerHTML = henkilo.driversLicense ? "Kyllä" : "Ei";
+        ajokorttiTd.textContent = henkilo.driversLicense ? "Kyllä" : "Ei";
 
-        rivi.append(nimiTd);
-        rivi.append(ikaTd);
-        rivi.append(jobTd);
-        rivi.append(ajokorttiTd);
+        rivi.append(nimiTd, ikaTd, jobTd, ajokorttiTd);
 
         rivit.append(rivi);
     }
 }
+
+lomake.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const nimi = document.getElementById("nimi").value;
+    const ika = Number(document.getElementById("ika").value);
+    const tyo = document.getElementById("tyo").value;
+    const ajokortti = document.getElementById("ajokortti").checked;
+
+    if (ika < 0) {
+
+        alert("Iän pitää olla positiivinen luku");
+        return;
+    }
+
+    const uusiHenkilo = {
+        name: nimi,
+        age: ika,
+        job: tyo,
+        driversLicense: ajokortti
+    };
+
+    henkilot.push(uusiHenkilo);
+
+    luoRivit();
+
+    lomake.reset();
+});
 
 luoRivit();
