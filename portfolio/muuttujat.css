@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("wpps/wpp6.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    padding: 40px;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+
+section {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00bfff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #0099cc;
+    transform: scale(1.05);
+}
+
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+
+#paivamaara,
+#aika,
+#paivaJaAika,
+#viikonpaiva,
+#kuukausi {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+
+#veijotuuli,
+#mehdielvira,
+#elviratuuli {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+section {
+    min-height: 280px;
+}
+
+section ul {
+    margin-top: 15px;
+}
+
+
+h2 {
+    line-height: 1.2;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tehtävälista</title>
+    <link rel="stylesheet" href="tehtava.css"> 
 </head>
 <body>
 
@@ -11,16 +12,51 @@
         <a href="index.html">Etusivu</a>
     </nav>
 
-    <h1>Tehtävälista</h1>
+    <header>
+        <div class="container">
+            <h1>tehtävälista</h1>
 
-    <ul id="lista"></ul>
+            <a href="../tyokokemus.html">Työkokemus</a>
+            <a href="index.html">Portfolio</a>
+            <a href="../index.html">Etusivu</a>
+            <a href="muuttujat.html">Muuttujat</a>
+        </div>
+    </header>
 
-    <input type="text" id="uusiTehtava">
 
-    <input type="number" id="maara" min="1" value="1">
+    <div class="layout">
 
-    <button onclick="lisaa()">Lisää</button>
+        <aside>
+            <a href="henkilötiedot.html">Henkilötiedot</a>
+            <a href="keskustelu.html">Keskustelut</a>
+            <a href="nature.mp4">Nature Video</a>
+            <a href="flex.html">Poke gallery</a>
+            <a href="Tehtävälista.html">Tehtävälista</a>
+        </aside>
+
+        <main>
+
+            <ul id="lista"></ul>
+
+            <input type="text" id="uusiTehtava">
+
+            <input type="number" id="maara" min="1" value="1">
+
+            <button onclick="lisaa()">Lisää</button>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>Kuba-jhk-2026</p>
+    </footer>
 
     <script src="tehtävälista.js"></script>
+
 </body>
+
+<footer>
+    <p>Kuba-jhk-2026</p>
+</footer>
 </html>

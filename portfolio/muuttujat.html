@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="muuttujat.css">
     <script src="muuttujat.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +42,55 @@ body {
     <button onclick="laskin_kerto()">*</button>
     <button onclick="laskin_jako()">/</button>
 </section>
-    
+
+<section>
+    <h2>Päivämäärä ja aika</h2>
+
+    <button onclick="naytaPaivamaaraJaAika()">
+        Näytä päivämäärä ja aika
+    </button>
+
+    <div id="paivamaara"></div>
+    <div id="aika"></div>
+    <div id="paivaJaAika"></div>
+    <div id="viikonpaiva"></div>
+    <div id="kuukausi"></div>
+</section>
+ 
+<section id="Veijo">
+    <h2>Veijo</h2>
+    <ul></ul>
+</section>
+
+<section id="Elvira">
+    <h2>Elvira</h2>
+    <ul></ul>
+</section>
+
+<section id="Mehdi">
+    <h2>Mehdi</h2>
+    <ul></ul>
+</section>
+
+<section id="Tuuli">
+    <h2>Tuuli</h2>
+    <ul></ul>
+</section>
+
+<section>
+    <h2>Veijo + Tuuli</h2>
+    <ul id="veijotuuli"></ul>
+</section>
+
+<section>
+    <h2>Mehdi + Elvira</h2>
+    <ul id="mehdielvira"></ul>
+</section>
+
+<section>
+    <h2>Elvira + Tuuli</h2>
+    <ul id="elviratuuli"></ul>
+</section>
+
 </body>
 </html>
