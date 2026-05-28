@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merkkijonot</title>
+
+  <link rel="stylesheet" href="merkkijonot.css">
+</head>
+<body>
+
+  <h1>Merkkijonot</h1>
+
+  <section>
+    <h2>Poimi kirjain</h2>
+
+    <input type="text" id="poimiTeksti" placeholder="Kirjoita teksti">
+    <input type="number" id="poimiNumero" placeholder="Indeksi">
+
+    <button id="poimiBtn">Näytä</button>
+
+    <div class="result" id="poimiTulos"></div>
+  </section>
+
+  <section>
+    <h2>Löydä indeksi</h2>
+
+    <input type="text" id="indeksiTeksti" placeholder="Kirjoita teksti">
+    <input type="text" id="haettavaTeksti" placeholder="Haettava teksti">
+
+    <button id="indeksiBtn">Näytä</button>
+
+    <div class="result" id="indeksiTulos"></div>
+  </section>
+
+  <section>
+    <h2>Leikkaa merkkijono</h2>
+
+    <input type="text" id="sliceTeksti" placeholder="Kirjoita teksti">
+    <input type="number" id="sliceAlku" placeholder="Alku">
+    <input type="number" id="sliceLoppu" placeholder="Loppu">
+
+    <button id="sliceBtn">Näytä</button>
+
+    <div class="result" id="sliceTulos"></div>
+  </section>
+
+  <section>
+    <h2>Etsi ja korvaa</h2>
+
+    <input type="text" id="korvaaTeksti" placeholder="Kirjoita teksti">
+    <input type="text" id="etsiTeksti" placeholder="Etsi">
+    <input type="text" id="uusiTeksti" placeholder="Korvaa tällä">
+
+    <button id="korvaaBtn">Näytä</button>
+
+    <div class="result" id="korvaaTulos"></div>
+  </section>
+
+  <section>
+    <h2>Poikki ja pinoon</h2>
+
+    <input type="text" id="splitTeksti" placeholder="Kirjoita teksti">
+    <input type="text" id="jakajaTeksti" placeholder="Jakaja">
+
+    <button id="splitBtn">Näytä</button>
+
+    <ul id="splitLista"></ul>
+  </section>
+
+  <script src="merkkijonot.js"></script>
+</body>
+</html>
