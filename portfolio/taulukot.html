@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taulukot</title>
+
+  <link rel="stylesheet" href="taulukot.css">
+</head>
+<body>
+
+  <h1>Taulukot</h1>
+
+  <section>
+    <h2>Poimi elementti</h2>
+
+    <input type="number" id="poimiNumero" placeholder="Indeksi">
+
+    <button id="poimiBtn">Näytä</button>
+
+    <div class="result" id="poimiTulos"></div>
+  </section>
+
+  <section>
+    <h2>Löydä indeksi</h2>
+
+    <input type="text" id="etsiSana" placeholder="Kirjoita sana">
+
+    <button id="etsiBtn">Näytä</button>
+
+    <div class="result" id="etsiTulos"></div>
+  </section>
+
+  <section>
+    <h2>Leikkaa taulukko</h2>
+
+    <input type="number" id="sliceAlku" placeholder="Alku">
+    <input type="number" id="sliceLoppu" placeholder="Loppu">
+
+    <button id="sliceBtn">Näytä</button>
+
+    <ul id="sliceLista"></ul>
+  </section>
+
+  <section>
+    <h2>Järjestä</h2>
+
+    <button id="tulostaTekstitBtn">Tulosta tekstit</button>
+    <button id="jarjestaTekstitBtn">Järjestä tekstit</button>
+    <button id="kaannaTekstitBtn">Käännä tekstien järjestys</button>
+
+    <br><br>
+
+    <button id="tulostaNumerotBtn">Tulosta numerot</button>
+    <button id="jarjestaNumerotBtn">Järjestä numerot</button>
+    <button id="kaannaNumerotBtn">Käännä numeroiden järjestys</button>
+
+    <ul id="jarjestaLista"></ul>
+  </section>
+
+  <section>
+    <h2>Suodata</h2>
+
+    <input type="number" id="suodatusNumero" placeholder="Anna numero">
+
+    <button id="tulostaSuodatusBtn">Tulosta numerot</button>
+    <button id="pienemmatBtn">Valitse pienemmät</button>
+    <button id="suuremmatBtn">Valitse suuremmat</button>
+
+    <ul id="suodatusLista"></ul>
+  </section>
+
+  <script src="taulukot.js"></script>
+</body>
+</html>
