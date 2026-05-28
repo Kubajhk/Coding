@@ -183,3 +183,43 @@ for (let oikeus of elviraTuuliErotus) {
 
     elviraTuuliLista.appendChild(li);
 }
+
+
+function laskin_abs() {
+    let eka = Number(document.getElementById("numero1").value);
+
+    alert(Math.abs(eka));
+}
+
+function laskin_sqrt() {
+    let eka = Number(document.getElementById("numero1").value);
+
+    alert(Math.sqrt(eka));
+}
+
+function laskin_pow() {
+    let eka = Number(document.getElementById("numero1").value);
+    let toka = Number(document.getElementById("numero2").value);
+
+    alert(Math.pow(eka, toka));
+}
+
+function laskin_max() {
+    let eka = Number(document.getElementById("numero1").value);
+    let toka = Number(document.getElementById("numero2").value);
+
+    alert(Math.max(eka, toka));
+}
+
+function laskin_min() {
+    let eka = Number(document.getElementById("numero1").value);
+    let toka = Number(document.getElementById("numero2").value);
+
+    alert(Math.min(eka, toka));
+}
+
+function laskin_round() {
+    let eka = Number(document.getElementById("numero1").value);
+
+    alert(Math.round(eka));
+}
